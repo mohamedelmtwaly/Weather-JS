@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="py-5">
+    <nav  class=" container navbar navbar-expand-lg navbar-light text-light ">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo image">
+        Weather App
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ms-auto text-white ">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#" >Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+  </header>
+  <main>
+    <section class="hero-sec py-3">
+      <div class="container ">
+        <div class="input-group">
+          <input id="searchInput" type="search" class=" rounded-pill form-control" placeholder="Find Your Location">
+        </div>
+      </div>
+    </section>
+    <section class="sec-weather py-5 ">
+
+      <div class="container style-table ">
+
+        <div class="row">
+
+          <div class=" col-sm-12 col-md-4  ">
+
+            <div class="table-tody-weather ">
+              <div class="header-table">
+
+                <p id="todayStr" class="day">friday</p>
+                <p id="todayDate" class="date">26July</p>
+
+              </div>
+
+              <div class="content-table-today">
+
+                <p class="city" id="locationCurrent"> </p>
+
+                <div class="content-degree">
+                  <p id="tempToday"></p>
+                  <img  id="imageCondation" src="assets/images/weather-icon-1.png" alt="" width="90">
+                </div>
+                <p id="todayCondationDes" class="desc-weather">Clear</p>
+                <span><img src="assets/images/icon-umberella.png" alt=""><span id="humidity">20%</span></span>
+              
+                <span><img src="assets/images/icon-wind.png" alt=""> <span id="wind">18km/h</span></span>
+  
+                <span><img src="assets/images/icon-compass.png" alt=""><span id="windDirection">East</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-sm-12 col-md-4  ">
+
+            <div class="table-tody-weather  ">
+
+              <div class="header-table d-flex justify-content-center">
+                <p class=" nextdayStr">Saturday
+                </p>
+              </div>
+
+              <div class="content-table-today d-flex flex-column align-items-center justify-content-center ">
+
+                <img class="nextConditionImg" src="assets/images/icon-compass.png" alt="" width="40" height="40">
+
+                <p class="mt-2 temNext temNextMax">
+                </p>
+                <p class="mt-2 temNextMin "></p>
+                <p class="mt-2 descNextDay">Sunny</p>
+              </div>
+
+            </div>
+
+
+          </div>
+          <div class=" col-sm-12 col-md-4  ">
+
+            <div class="table-tody-weather  ">
+
+              <div class="header-table d-flex justify-content-center">
+                <p  class=" nextdayStr">Saturday
+                </p>
+              </div>
+
+              <div class="content-table-today d-flex flex-column align-items-center justify-content-center ">
+
+                <img class="nextConditionImg" src="assets/images/icon-compass.png" alt="" width="40" height="40">
+
+                <p class="mt-2 temNextMax">
+                </p>
+                <p class="mt-2 tems temNextMin"></p>
+                <p class="mt-2 descNextDay">Sunny</p>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <input type="email" class="form-control rounded-pill  mb-4" placeholder="Enter Your email to subscribe">
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <div class="social-links">
+        
+            <a href="#">  <i class="fa-brands fa-facebook-f "></i></a>
+            <a href="#"><i class="fa-brands  fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands  fa-google-plus"></i></a>
+            <a href="#"><i class="fa-brands  fa-pinterest"></i></a>
+          </div>
+        </div>
+        <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/index.js"></script>  
+</body>
+</html>
