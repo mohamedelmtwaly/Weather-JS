@@ -1,0 +1,117 @@
+
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  
+}
+
+header{
+  background: #1e202b;
+}
+
+/* NAV BAR */
+.nav-link , .navbar-brand{
+  color: #fff;
+}
+
+.nav-link:hover ,.navbar-brand:hover{
+  color: #009bd8 !important;
+
+}
+
+
+.nav-item .active{
+  color: #009bd8 !important;
+}
+
+/* HERO SECTION */
+.hero-sec{
+  min-height: 50vh;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* MAIN SECTION */
+main{
+  background: #1e202b;
+}
+
+.style-table{
+  margin-top: -200px;
+}
+.header-table{
+  background-color: rgb(0 0 0 / 10%);
+  display:flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top-left-radius:10px ;
+}
+
+.header-table p{
+ 
+  font-size: 18px;
+  font-weight: 400;
+  color:#bfc1c8;
+
+}
+.city{
+  font-size: 24px;
+  font-weight: 400;
+}
+.content-degree p{
+  font-size: 100px;
+  color: #fff;
+}
+.desc-weather{
+  color:#009ad8;
+  margin: 20px 0;
+}
+.content-table-today span img{
+  margin-right: 10px;
+}
+.content-table-today{
+  background-color: #323544;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  height: 450px;
+
+}
+
+.tem-next {
+  color: #fff;
+  font-size: 25px ;
+}
+
+.desc-next-day{
+  color:#009ad8;
+
+}
+footer{
+  background-color: #262936;
+
+}
+.social-links{
+  display: flex;
+  
+}
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #1e202b;
+  color: #009ad8;
+  text-align: center;
+  line-height: 2;
+  display: grid;
+  place-content: center;
+  text-decoration: none;
+
+}
+.social-links a:hover{
+  background-color: #009ad8;
+  color: #fff;
+}

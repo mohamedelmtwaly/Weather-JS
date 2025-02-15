@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Set character encoding and ensure responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title -->
+  <title>Weather</title>
+  <!-- Link to Font Awesome CSS for icons -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <!-- Link to Bootstrap CSS for responsive styling -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">  
+  <!-- Link to custom stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- HEADER SECTION -->
+  <header class="py-5">
+    <!-- Navbar container with Bootstrap classes -->
+    <nav class="container navbar navbar-expand-lg navbar-light text-light">
+      <!-- Brand/logo with an image -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo image">
+        Weather App
+      </a>
+      <!-- Toggler for responsive navbar -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapsible part of navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Navbar links aligned to the right -->
+        <ul class="navbar-nav ml-auto ms-auto text-white">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT SECTION -->
+  <main>
+    <!-- Hero section with search input -->
+    <section class="hero-sec py-3">
+      <div class="container">
+        <!-- Input group for search functionality -->
+        <div class="input-group">
+          <input id="searchInput" type="search" class="rounded-pill form-control" placeholder="Find Your Location">
+        </div>
+      </div>
+    </section>
+
+    <!-- Weather section to display today's weather and forecast -->
+    <section class="sec-weather py-5">
+      <div class="container style-table">
+        <div class="row">
+          <!-- Today’s Weather Column -->
+          <div class="col-sm-12 col-md-4">
+            <div class="table-tody-weather">
+              <!-- Header showing day and date -->
+              <div class="header-table">
+                <p id="todayStr" class="day">Friday</p>
+                <p id="todayDate" class="date">26 July</p>
+              </div>
+              <!-- Content with current weather data -->
+              <div class="content-table-today">
+                <p class="city" id="locationCurrent"></p>
+                <div class="content-degree">
+                  <p id="tempToday"></p>
+                  <!-- Weather condition icon -->
+                  <img id="imageCondition" src="assets/images/weather-icon-1.png" alt="" width="90">
+                </div>
+                <p id="todayConditionDes" class="desc-weather">Clear</p>
+                <!-- Humidity, wind speed, and wind direction with icons -->
+                <span><img src="assets/images/icon-umberella.png" alt=""><span id="humidity">20%</span></span>
+                <span><img src="assets/images/icon-wind.png" alt=""> <span id="wind">18km/h</span></span>
+                <span><img src="assets/images/icon-compass.png" alt=""><span id="windDirection">East</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Forecast Column 1 -->
+          <div class="col-sm-12 col-md-4">
+            <div class="table-tody-weather">
+              <!-- Header for the next day's forecast -->
+              <div class="header-table d-flex justify-content-center">
+                <p class="nextdayStr">Saturday</p>
+              </div>
+              <!-- Content for the next day's weather -->
+              <div class="content-table-today d-flex flex-column align-items-center justify-content-center">
+                <img class="nextConditionImg" src="assets/images/icon-compass.png" alt="" width="40" height="40">
+                <p class="mt-2 temNext temNextMax"></p>
+                <p class="mt-2 temNextMin"></p>
+                <p class="mt-2 descNextDay">Sunny</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Forecast Column 2 -->
+          <div class="col-sm-12 col-md-4">
+            <div class="table-tody-weather">
+              <!-- Header for the next day's forecast -->
+              <div class="header-table d-flex justify-content-center">
+                <p class="nextdayStr">Saturday</p>
+              </div>
+              <!-- Content for the next day's weather -->
+              <div class="content-table-today d-flex flex-column align-items-center justify-content-center">
+                <img class="nextConditionImg" src="assets/images/icon-compass.png" alt="" width="40" height="40">
+                <p class="mt-2 temNextMax"></p>
+                <p class="mt-2 temNextMin"></p>
+                <p class="mt-2 descNextDay">Sunny</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Email subscription input -->
+        <div class="col-md-8">
+          <input type="email" class="form-control rounded-pill mb-4" placeholder="Enter Your Email to Subscribe">
+        </div>
+        <!-- Social media links -->
+        <div class="col-md-3 col-md-offset-1">
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+        <!-- Copyright information -->
+        <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>  
+</body>
+</html>
