@@ -41,7 +41,7 @@ All weather data is retrieved via API calls, and the app supports real-time sear
   For building the structure and styling of the app.
 - **JavaScript (ES6):**  
   For handling API calls, real-time search, and dynamic DOM manipulation.
-- **Bootstrap 4:**  
+- **Bootstrap :**  
   For creating a responsive layout and utilizing prebuilt UI components.
 - **Font Awesome:**  
   For incorporating icons to improve the app’s visual design.
